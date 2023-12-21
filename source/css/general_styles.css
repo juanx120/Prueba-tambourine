@@ -1,0 +1,29 @@
+/*Se reinician las variables que estan por defecto*/
+*{
+    margin: 0px;
+}
+/*Se establece los estilos que manejara los encabezados h1*/
+h1{
+    font-family: 'Cardo', Regular;
+    font-size: 60px;
+    font-weight: normal;/*Se quita la negrilla del encabezado*/
+    color: #1B1B1B;
+    z-index: 1;/*Se le da la prioridad para estar superpuesto a los demas encabezados*/
+    letter-spacing: -1.29px;/*se establece el espaciado entre letras*/
+}
+/*Se establece los estilos que manejara los encabezados h2*/
+h2{
+    font-family: 'Source Sans 3', Regular;
+    font-size: 16px;
+    letter-spacing: 0px;/*se establece el espaciado entre letras*/
+    color: #1B1B1B;
+    font-weight: normal;/*Se quita la negrilla del encabezado*/
+}
+/*Se establece los estilos que manejara los encabezados h3*/
+h3{
+    font-family: 'Montserrat', Medium;
+    font-size: 14px;
+    color: #98A684;
+    letter-spacing: 0.35px;
+    text-transform: uppercase;/*Se establece que todos los encabezados h3 van a estar en mayuscula*/
+}

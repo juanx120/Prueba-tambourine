@@ -1,0 +1,38 @@
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 132px;
+    margin-bottom: 85px;
+}
+#principal_title{
+    text-align: center;
+    width: 283px;/*Tamaño para el fondo*/
+    background-color: white;/*Se coloca un fondo blanco para tapar parte de la linea del contenedor de las listas*/
+}
+#initial_list{
+    display: flex;
+    /*Se colocan los bordes de la seccion de lista*/
+    border-top: 1px solid #98A684;
+    border-bottom: 1px solid #98A684;
+    /*Se establece una margen negativa para que el borde superior de la seccion quede por debajo de titulo*/
+    margin-top: -35px;
+    /*Se establece un display wrap, para que se adapte al responsive*/
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.list_content_i{
+    /*Se colocan las margenes para dar la separacion y darle un tamaño a la seccion de las listas*/
+    margin: 86px 0px 51px 0px;
+    color: #1B1B1B;
+}
+/*Se establece un comportamiento del estilo para un tamaño maximo de 768*/
+@media screen and (max-width: 768px) {
+    #title{
+        margin-top: 100px;/*Se cambia la separacion del titulo con pa parte superior de la pagina*/
+    }
+    #list_content3{
+        margin-top: 0px;
+    }
+}

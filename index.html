@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Se hace el llamado a las diferentes hojas de estilos-->
+    <link rel="stylesheet" href="source/css/general_styles.css">
+    <link rel="stylesheet" href="source/css/title.css">
+    <link rel="stylesheet" href="source/css/cards.css">
+    <link rel="stylesheet" href="source/css/menu.css">
+    <!--Se hace el llamado al servidor de google fonts, el que permitira usar diferentes fuentes de texto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat:wght@500&family=Source+Sans+3&family=Work+Sans:wght@600&display=swap"
+        rel="stylesheet">
+    <title>Pueba tambourine Juan Gomez</title>
+</head>
+
+<body>
+    <!--Primera parte, donde se encuentran todos los titulos y la lista-->
+    <div id="title">
+        <h3>Amenities for</h3>
+        <h1 id="principal_title">Weddings</h1>
+        <!--Se crea el div que va a contener las listas, y dentro se crean tres listas diferentes-->
+        <div id="initial_list">
+            <ul class="list_content_i" id="list_content1">
+                <li>On-Site Activities and Events</li>
+                <li>Hotel Recommended Vendor List</li>
+                <li>Butler-Passed Hors d’oeuvres</li>
+            </ul>
+            <ul class="list_content_i" id="list_content2">
+                <li>Complimentary Tasting for Four Guests</li>
+                <li>Complimentary Suite for Wedding Couple </li>
+                <li>Courtesy Guestroom Block</li>
+            </ul>
+            <ul class="list_content_i" id="list_content3">
+                <li>Complimentary Parquet Dance Floor</li>
+                <li>On-Site Audio-Visual Partner</li>
+                <li>Butler-Passed Hors d’oeuvres</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Segunda parte, donde se encuentran las tarjetas-->
+    <!--Se crea el div que va a contener las tarjetas y el fondo-->
+    <div id="cards_background">
+        <!--Se crea el div de las tarjetas-->
+        <div id="cards">
+            <!--Se crea el div que va contener el texto de las tarjetas y flechas-->
+            <div id="cards_text">
+                <h3>subheadline</h3>
+                <h1 id="hotel_name">Stunning Location</h1>
+                <h2 id="hotel_description">From the picturesque Linear Park to the sprawling and elegant Grande
+                    Ballroom, Reunion Resort & Golf Club offers gorgeous ceremony settings.</h2>
+                <!--Se crea el div que contiene las flechas-->
+                <div id="arrows">
+                    <!--se crea la flecha izquierda, a partir de un triangulo y una linea-->
+                    <div class="left_arrow">
+                        <div class="triangulo_iz"></div>
+                        <div class="linea_iz"></div>
+                    </div>
+                    <!--se crea la flecha derecha, a partir de un triangulo y una linea-->
+                    <div class="right_arrow">
+                        <div class="linea_de"></div>
+                        <div class="triangulo_de"></div>
+                    </div>
+                </div>
+            </div>
+            <!--Se crea el div de la imagen el cual contiene el tamaño-->
+            <div id="cards_image">
+                <!--Se coloca la imagen en el contenedor-->
+                <img id="card_img" src="source/img/TheCrescent.jpg" alt="">
+            </div>
+            <!--Se crea el contenedor del numero, el que le dara la ubicacion-->
+            <div id="cards_number">
+                <!--Se coloca el numero en el contenedor-->
+                <span id="n_card">02</span>
+            </div>
+        </div>
+    </div>
+
+    <!--Tercera parte, donde se encuentra la opcion para ver el menu del hotel-->
+    <div id="hotel_menu">
+        <!--Se crea el contenedor de la imagen de esta seccion-->
+        <div id="img_menu">
+        </div>
+        <!--Se crea el contenedor del texto y el boton-->
+        <div id="menu_text">
+            <h3>subheadline</h3>
+            <h1 id="menu_title">Menus Made -To-Order</h1>
+            <h2 id="menu_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus, nibh a
+                luctus lacinia, ligula dolor luctus nibh, a elementum metus nunc a quam. Pellentesque mattis libero sit
+                amet ligula placerat fermentum. Ut aliquet aliquam velit et rhoncus.</h2>
+            <!--Se crea el boton que servira para revisar el menu-->
+                <button id="menu_button">view menus</button>
+        </div>
+    </div>
+    <!--Se hace el llamado a los js-->
+    <script src="source/js/slider.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+#cards_background{
+    /*Se establece el tamaño del fondo que contiene a las tarjetas*/
+    width: 100%;
+    height: 800px;
+    /*Se coloca la imagen de fondo para el contenedor*/
+    background-image: url("/source/img/TheCrescentByN.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/*Se indica que la imagen ocupe todo el contenedor*/
+    background-color: #98A684; /*Se establece el color que actuará como un filtro*/
+    background-blend-mode: soft-light; /*Se indica el modo de mezcla para el color de fondo y la imagen*/
+    display: flex;
+    /*Se alinean los contenedores hijos de manera vertical y horizontal*/
+    justify-content: center;
+    align-items: center;
+}
+#cards{
+    display: flex;
+    justify-content: center;
+    /*Tamaño de las tarjetas*/
+    width: 1170px;
+    height: 604px;
+    background-color: #FFFFFF;/*Color de las tarjetas*/
+    box-shadow: 20px 10px 50px #0000002F;/*Se coloca la sombra de las tarjetas*/
+    transition: opacity 0.5s;/*Se indica la trancision que tendran las cartas*/
+}
+#cards_text{
+    /*Tamaño del contenedor del texto en relacion con la imagen*/
+    width: 32%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;/*Se indica que la distribucion del contenido va a ser en columna*/
+    justify-content: center;
+    /*Distancia que tendra el texto entre los bordes del contenedor*/
+    padding-left: 99px;
+    padding-right: 127px;
+}
+#hotel_name{
+    padding-right: 80px;/*Se indica la distancia con el borde del contenedor, para que el texto no ocupe todo*/
+    margin: 18px 0px 20px 0px;
+    color: #3C3C3C;
+
+}
+#hotel_description{
+    width: 359px;/*ancho de la descripcion*/
+}
+#cards_image img{
+    /*Se establecen que el alto y el ancho de la imagen ocupe el tamaño correspondiente de la tajeta*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*Ajusta el contenido al tamaño del contenedor*/
+    object-position: right;/*Se coloca que la imagen se alinie al lado derecho*/
+}
+#cards_number{
+    font-family: 'Cardo', Regular;
+    font-size: 200px;
+    color: #FFFFFF;
+    position: absolute;/*Se le coloca la poscicion del numero*/
+    left: 73%;/*Se coloca la pocicion en relacion al ancho total de la pagina*/
+    top: 980px;/*Se establece la pocicion en pixeles desde la parte superior*/
+
+}
+#arrows{
+    position: absolute;/*Se indica la pocicion de las flechas*/
+    top: 1100px;/*Pocicion respecto al lado superior de la pagina*/
+    left: 750px;/*Pocicion respecto al lado izquierdo de la pagina*/
+    display:flex;/*se usa para que se alinien horizontalmente las flechas*/
+}
+.left_arrow {
+    /*Se usa para alinear el triangulo y la linea*/
+    display: flex;
+    align-items: center;
+    cursor: pointer;/*Se cambia el cursor por una mano*/
+    margin-right: 25px; /*Separacion de las flechas*/
+}
+
+.triangulo_iz {
+    border-top: 3px solid transparent;    /* Lado superior */
+    border-bottom: 3px solid transparent; /* Lado inferior */
+    border-right: 6px solid black;        /* Lado derecho */
+}
+
+.linea_iz {
+    height: 1px;/*grosor de la linea*/
+    width: 50px;/*Largo de la linea*/
+    background-color: black;
+    margin-left: -5px; /* Alineación con el triángulo */
+}
+.right_arrow {
+    /*Se usa para alinear el triangulo y la linea*/
+    display: flex;
+    align-items: center;
+    cursor: pointer;/*Se cambia el cursor por una mano*/
+}
+
+.triangulo_de {
+    border-top: 3px solid transparent;    /* Lado superior */
+    border-bottom: 3px solid transparent; /* Lado inferior */
+    border-left: 6px solid black;        /* Lado izquierdo */
+}
+
+.linea_de {
+    height: 1px;/*grosor de la linea*/
+    width: 50px;/*Largo de la linea*/
+    background-color: black;
+    margin-right: -5px; /* Alineación con el triángulo */
+}
+/*Se establece un comportamiento del estilo para un tamaño maximo de 1440*/
+@media screen and (max-width: 1440px){
+    #cards_number{
+        left: 80%;/*Se coloca la pocicion en relacion al ancho total de la pagina*/
+    }
+    #arrows{
+        top: 1100px;/*Pocicion respecto al lado superior de la pagina*/
+        left: 550px;/*Pocicion respecto al lado izquierdo de la pagina*/
+    }
+}
+/*Se establece un comportamiento del estilo para un tamaño minimo de 2560*/
+@media screen and (min-width: 2560px){
+    #cards_number{
+        left: 67%;/*Se coloca la pocicion en relacion al ancho total de la pagina*/
+    }
+    #arrows{
+        top: 1110px;/*Pocicion respecto al lado superior de la pagina*/
+        left: 1100px;/*Pocicion respecto al lado izquierdo de la pagina*/
+    }
+}
+/*Se establece un comportamiento del estilo para un tamaño maximo de 1024*/
+@media screen and (max-width: 1024px){
+    #cards{
+        display: flex;
+        flex-direction: column-reverse;/*Se cambia la direccion de los contenedores a columna inversa*/
+        justify-content: center;
+        /*Tamaño de las tarjetas*/
+        width: 700px;
+        height: 600px;
+    }
+    #cards_text{
+        width: 100%;
+        height: 100%;
+        margin-left: 100px;
+        padding: 0px;
+    }
+    #cards_image{
+        height: 300px;
+    }
+    #hotel_description{
+        width: 460px;/*ancho de la descripcion*/
+    }
+    #cards_number{
+        top: 460px;
+        left: 70%;/*Se coloca la pocicion en relacion al ancho total de la pagina*/
+    }
+    #arrows{
+        top: 1140px;/*Pocicion respecto al lado superior de la pagina*/
+        left: 680px;/*Pocicion respecto al lado izquierdo de la pagina*/
+    }
+}
+/*Se establece un comportamiento del estilo para un tamaño maximo de 768*/
+@media screen and (max-width: 768px) {
+    #cards{
+        width: 600px;
+    }
+    #cards_number{
+        top: 560px;
+        left: 69%;/*Se coloca la pocicion en relacion al ancho total de la pagina*/
+    }
+    #cards_text{
+        margin-left: 60px;
+    }
+    #arrows{
+        top: 1220px;/*Pocicion respecto al lado superior de la pagina*/
+        left: 530px;/*Pocicion respecto al lado izquierdo de la pagina*/
+    }
+}

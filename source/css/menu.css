@@ -1,0 +1,66 @@
+#hotel_menu{
+    height: 973px;
+    /*Se establece que el display va a ser flex y que los hijos del contenedor esten centrados en vertical y horizontal*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img_menu{
+    /*Se establece el tamaño de la imagen*/
+    width: 720px;
+    height: 598px;
+    /*Se coloca la imagen del menu, desde un link de google*/
+    background-image: url(https://www.eltiempo.com/files/article_main_1200/uploads/2021/11/04/6184795f1ffc2.jpeg);
+    background-repeat: no-repeat;/*Se indica que la imagen no se repita*/
+    background-size:cover; /*Se indica que la imagen cubra todo el contenedor*/
+    margin-right: 105px; /*Se coloca la separacion de la imagen con la del texto*/
+}
+#menu_title{
+    color: #3C3C3C;
+    width: 317px;
+    margin: 26px 0px 19px 0px;/*Se colocan las margenes, para dar la separacion de los items de la seccion*/
+}
+#menu_description{
+    width: 379px;/*Se establece un tamaño predeterminado, para que el texto tenga un ancho predeterminado*/
+}
+#menu_button{
+    font-family: 'Work Sans', SemiBold;
+    margin-top: 39px;
+    color: #FFFFFF;/*Se coloca el color de la letra para el boton*/
+    background-color: #98A684;/*Se coloca el color del boton*/
+    /*Se establece el tamaño del boton*/
+    width: 223px;
+    height: 54px;
+    border-style: none;/*Se quitan los bordes preestablecidos del boton*/
+    cursor: pointer;/*Se cambia el estilo del cursor, para que sea una mano*/
+}
+/*Se establece un comportamiento del estilo para un tamaño maximo de 1024*/
+@media screen and (max-width: 1024px){
+    #hotel_menu{
+        height: 860px;/*Se cambia el tamaño del contenedor principal*/
+    }    
+    #img_menu{
+        /*Se establece el tamaño de la imagen*/
+        width: 500px;
+        height: 500px;
+        margin-right: 50px; /*Se coloca la separacion de la imagen con la del texto*/
+    }
+}
+
+/*Se establece un comportamiento del estilo para un tamaño maximo de 1024*/
+@media screen and (max-width: 768px){
+    #hotel_menu{
+        flex-direction: column;
+        height: 980px;/*Se cambia el tamaño del contenedor principal*/
+    }    
+    #img_menu{
+        /*Se establece el tamaño de la imagen*/
+        width: 430px;
+        height: 430px;
+        margin-right: 0px; /*Se coloca la separacion de la imagen con la del texto*/
+        margin-bottom: 25px;
+    }
+    #menu_title{
+        margin-top: 16px;/*Se cambia la margen para separar el titulo del sub*/
+    }
+}
