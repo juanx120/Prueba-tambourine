@@ -11,15 +11,15 @@ const cards=document.querySelector("#cards")//Selecciona toda la tarjeta
 var i=1
 //Rutas de las imagenes
 var images= [
-    '/source/img/HiltonCartagena.jpg',
-    '/source/img/TheCrescent.jpg',
-    '/source/img/UrbanRoyalCartagena.jpg'
+    'source/img/HiltonCartagena.jpg',
+    'source/img/TheCrescent.jpg',
+    'source/img/UrbanRoyalCartagena.jpg'
 ]
 //Rutas de las imagenes en blanco y negro
 var back_images=[
-    '/source/img/HiltonCartagenaByN.jpg',
-    '/source/img/TheCrescentByN.jpg',
-    '/source/img/UrbanRoyalCartagenaByN.jpg'
+    'source/img/HiltonCartagenaByN.jpg',
+    'source/img/TheCrescentByN.jpg',
+    'source/img/UrbanRoyalCartagenaByN.jpg'
 ]
 //textos del titulo
 var t_text=[

@@ -3,7 +3,7 @@
     width: 100%;
     height: 800px;
     /*Se coloca la imagen de fondo para el contenedor*/
-    background-image: url("/source/img/TheCrescentByN.jpg");
+    background-image: url("../img/TheCrescentByN.jpg");
     background-repeat: no-repeat;
     background-size: cover;/*Se indica que la imagen ocupe todo el contenedor*/
     background-color: #98A684; /*Se establece el color que actuará como un filtro*/
