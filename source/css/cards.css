@@ -161,8 +161,8 @@
         width: 600px;
     }
     #cards_number{
-        top: 560px;
-        left: 69%;/*Se coloca la pocicion en relacion al ancho total de la pagina*/
+        top: 535px;
+        left: 70%;/*Se coloca la pocicion en relacion al ancho total de la pagina*/
     }
     #cards_text{
         margin-left: 60px;
