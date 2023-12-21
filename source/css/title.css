@@ -36,3 +36,23 @@
         margin-top: 0px;
     }
 }
+/*Se establece un comportamiento del estilo para un tamaño maximo de 425*/
+@media screen and (max-width: 425px) {
+    #title{
+        margin-top: 80px;/*Se cambia la separacion del titulo con pa parte superior de la pagina*/
+    }
+    #initial_list{
+        justify-content: flex-start;/*Se cambia la aliniacion de las listas*/
+    }
+    /*Se da una nueva margen para las listas*/
+    #list_content2,
+    #list_content3{
+        margin-top: 0px;
+        margin-left: 60px;
+    }
+    #list_content1,
+    #list_content2{
+        margin-bottom: 15px;
+        margin-left: 60px;
+    }
+}

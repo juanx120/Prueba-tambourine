@@ -165,10 +165,45 @@
         left: 70%;/*Se coloca la pocicion en relacion al ancho total de la pagina*/
     }
     #cards_text{
-        margin-left: 60px;
+        margin-left: 60px;/*margen del texto respecto al lado izquierdo de la carta*/
     }
     #arrows{
         top: 1220px;/*Pocicion respecto al lado superior de la pagina*/
         left: 530px;/*Pocicion respecto al lado izquierdo de la pagina*/
+    }
+}
+/*Se establece un comportamiento del estilo para un tamaño maximo de 425*/
+@media screen and (max-width: 425px) {
+    h1{
+        font-size: 50px;
+    }
+    #cards{
+        width: 300px;
+    }
+    #cards_image{
+        height: 450px;
+    }
+    #cards_text{
+        margin-left: 25px;/*margen del texto respecto al lado izquierdo de la carta*/
+    }
+    #hotel_name{
+        margin: 0px;
+        padding: 0px;
+    }
+    #hotel_description{
+        width: 240px;/*ancho de la descripcion*/
+    }
+    #cards_number{
+        top: 570px;
+        left: 62%;/*Se coloca la pocicion en relacion al ancho total de la pagina*/
+        font-size: 130px;
+    }
+    #arrows{
+        top: 1225px;/*Pocicion respecto al lado superior de la pagina*/
+        left: 230px;/*Pocicion respecto al lado izquierdo de la pagina*/
+    }
+    .left_arrow {
+        /*Se usa para alinear el triangulo y la linea*/
+        margin-right: 10px; /*Separacion de las flechas*/
     }
 }

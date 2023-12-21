@@ -64,3 +64,21 @@
         margin-top: 16px;/*Se cambia la margen para separar el titulo del sub*/
     }
 }
+/*Se establece un comportamiento del estilo para un tamaño maximo de 425*/
+@media screen and (max-width: 425px) {
+    #hotel_menu{
+        height: 820px;/*Se cambia el tamaño del contenedor principal*/
+    }    
+    #img_menu{
+        /*Se establece el tamaño de la imagen*/
+        width: 330px;
+        height: 330px;
+        margin-bottom: 25px;
+    }
+    #menu_title{
+        margin-top: 16px;/*Se cambia la margen para separar el titulo del sub*/
+    }
+    #menu_description{
+        width: 330px;/*Se establece un tamaño predeterminado, para que el texto tenga un ancho predeterminado*/
+    }
+}
