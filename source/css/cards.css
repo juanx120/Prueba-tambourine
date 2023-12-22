@@ -62,7 +62,7 @@
 #arrows{
     position: absolute;/*Se indica la pocicion de las flechas*/
     top: 1100px;/*Pocicion respecto al lado superior de la pagina*/
-    left: 750px;/*Pocicion respecto al lado izquierdo de la pagina*/
+    left: 40%;/*Pocicion respecto al lado izquierdo de la pagina*/
     display:flex;/*se usa para que se alinien horizontalmente las flechas*/
 }
 .left_arrow {
@@ -111,7 +111,7 @@
     }
     #arrows{
         top: 1100px;/*Pocicion respecto al lado superior de la pagina*/
-        left: 550px;/*Pocicion respecto al lado izquierdo de la pagina*/
+        left: 36%;/*Pocicion respecto al lado izquierdo de la pagina*/
     }
 }
 /*Se establece un comportamiento del estilo para un tamaño minimo de 2560*/
@@ -152,7 +152,18 @@
     }
     #arrows{
         top: 1140px;/*Pocicion respecto al lado superior de la pagina*/
-        left: 680px;/*Pocicion respecto al lado izquierdo de la pagina*/
+        left: 68%;/*Pocicion respecto al lado izquierdo de la pagina*/
+    }
+}
+@media screen and (max-width: 842px){
+    
+    #cards_number{
+        top: 568px;
+        left: 73%;/*Se coloca la pocicion en relacion al ancho total de la pagina*/
+    }
+    #arrows{
+        top: 1245px;/*Pocicion respecto al lado superior de la pagina*/
+        left: 73%;/*Pocicion respecto al lado izquierdo de la pagina*/
     }
 }
 /*Se establece un comportamiento del estilo para un tamaño maximo de 768*/
@@ -169,16 +180,16 @@
     }
     #arrows{
         top: 1220px;/*Pocicion respecto al lado superior de la pagina*/
-        left: 530px;/*Pocicion respecto al lado izquierdo de la pagina*/
+        left: 72%;/*Pocicion respecto al lado izquierdo de la pagina*/
     }
 }
-/*Se establece un comportamiento del estilo para un tamaño maximo de 425*/
-@media screen and (max-width: 425px) {
+/*Se establece un comportamiento del estilo para un tamaño maximo de 562*/
+@media screen and (max-width: 562px) {
     h1{
         font-size: 50px;
     }
     #cards{
-        width: 300px;
+        width: 500px;
     }
     #cards_image{
         height: 450px;
@@ -191,19 +202,34 @@
         padding: 0px;
     }
     #hotel_description{
-        width: 240px;/*ancho de la descripcion*/
+        width: 400px;/*ancho de la descripcion*/
     }
     #cards_number{
         top: 570px;
-        left: 62%;/*Se coloca la pocicion en relacion al ancho total de la pagina*/
+        left: 75%;/*Se coloca la pocicion en relacion al ancho total de la pagina*/
         font-size: 130px;
     }
     #arrows{
         top: 1225px;/*Pocicion respecto al lado superior de la pagina*/
-        left: 230px;/*Pocicion respecto al lado izquierdo de la pagina*/
+        left: 70%;/*Pocicion respecto al lado izquierdo de la pagina*/
     }
     .left_arrow {
         /*Se usa para alinear el triangulo y la linea*/
         margin-right: 10px; /*Separacion de las flechas*/
+    }
+}
+/*Se establece un comportamiento del estilo para un tamaño maximo de 425*/
+@media screen and (max-width: 425px) {
+    #cards{
+        width: 300px;
+    }
+    #hotel_description{
+        width: 240px;/*ancho de la descripcion*/
+    }
+    #cards_number{
+        left: 62%;/*Se coloca la pocicion en relacion al ancho total de la pagina*/
+    }
+    #arrows{
+        left: 55%;/*Pocicion respecto al lado izquierdo de la pagina*/
     }
 }

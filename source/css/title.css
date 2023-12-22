@@ -27,13 +27,35 @@
     margin: 86px 0px 51px 0px;
     color: #1B1B1B;
 }
+@media screen and (max-width: 842px){
+    #list_content3{
+        margin-top: 0px;
+    }
+}
 /*Se establece un comportamiento del estilo para un tamaño maximo de 768*/
 @media screen and (max-width: 768px) {
     #title{
         margin-top: 100px;/*Se cambia la separacion del titulo con pa parte superior de la pagina*/
     }
+}
+/*Se establece un comportamiento del estilo para un tamaño maximo de 562*/
+@media screen and (max-width: 562px) {
+    #title{
+        margin-top: 80px;/*Se cambia la separacion del titulo con pa parte superior de la pagina*/
+    }
+    #initial_list{
+        justify-content: flex-start;/*Se cambia la aliniacion de las listas*/
+    }
+    /*Se da una nueva margen para las listas*/
+    #list_content2,
     #list_content3{
         margin-top: 0px;
+        margin-left: 60px;
+    }
+    #list_content1,
+    #list_content2{
+        margin-bottom: 15px;
+        margin-left: 60px;
     }
 }
 /*Se establece un comportamiento del estilo para un tamaño maximo de 425*/

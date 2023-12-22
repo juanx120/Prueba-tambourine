@@ -46,7 +46,6 @@
         margin-right: 50px; /*Se coloca la separacion de la imagen con la del texto*/
     }
 }
-
 /*Se establece un comportamiento del estilo para un tamaño maximo de 1024*/
 @media screen and (max-width: 768px){
     #hotel_menu{
